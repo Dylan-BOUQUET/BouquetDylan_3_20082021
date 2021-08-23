@@ -1,0 +1,146 @@
+@media screen and (min-width: 768px) {
+
+    footer {
+
+      text-align: center;
+
+    }
+
+
+    .number {
+
+        right: 0;
+        top: -15px;
+
+    }
+
+
+    .restaurant__title {
+
+        width: 100%;
+
+    }
+
+
+    .restaurant__title h3 {
+
+        text-align: center;
+
+    }
+
+
+    .card {
+
+        width: 40%;
+
+    }
+
+
+    .main__restaurant {
+
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+
+    }
+
+
+    .loader__food {
+
+        top: 40%;
+        left: 35%;
+
+    }
+
+
+    .operation__steps {
+
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .main__restaurant {
+      padding: 0 20%;
+
+    }
+
+    .loader__food {
+
+        top: 40%;
+        left: 45%;
+
+    }
+
+    .full__menu {
+
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+
+    .starter {
+
+        width: 400px;
+
+    }
+
+
+    .dish {
+
+        width: 400px;
+
+    }
+
+
+    .dessert {
+
+        width: 400px;
+
+    }
+
+
+    .menu__title {
+
+        padding: 10px 90px;
+
+    }
+
+
+    .last__line p {
+
+        padding-right: 20px;
+
+    }
+
+
+    .btn__order button {
+
+        width: 25%;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .operation h2 {
+
+      text-align: center;
+
+    }
+
+
+}
