@@ -1,0 +1,19 @@
+{
+  "name": "p3_bouquet_dylan",
+  "version": "1.0.0",
+  "description": "Porjet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan-BOUQUET/BouquetDylan_3_23082021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylan-BOUQUET/BouquetDylan_3_23082021/issues"
+  },
+  "homepage": "https://github.com/Dylan-BOUQUET/BouquetDylan_3_23082021#readme"
+}
