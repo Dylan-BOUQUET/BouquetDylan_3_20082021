@@ -1,32 +1,32 @@
-@keyframes grow {
+@keyframes grow{
 
     0%,100% {
 
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
 
     }
+  
+    50%{
 
-    50% {
-
-        -webkit-transform: scaleY(1.8);
-        transform: scaleY(1.8);
+      -webkit-transform: scaleY(1.8);
+      transform: scaleY(1.8);
 
     }
 }
 
 
-@keyframes roate {
+@keyframes rotate {
 
-    from {
+    from{
 
-        -webkit-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
 
     }
 
-    to {
+    to{
 
-        -webkit-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
 
     }
 
@@ -37,19 +37,19 @@
 
     0% {
 
-        opacity: 1;
+      opacity: 1;
 
     }
 
     50% {
 
-        opacity: 0.5;
+      opacity: 0.5;
 
     }
 
     100% {
 
-        opacity: 0;
+      opacity: 0;
 
     }
 
@@ -60,13 +60,13 @@
 
     from {
 
-        opacity: 0;
+      opacity:0;
 
     }
 
     to {
 
-        opacity: 1;
+      opacity:1;
 
     }
 
@@ -77,20 +77,20 @@
 
     0% {
 
-        opacity: 0;
+      opacity: 0;
 
     }
 
     50% {
 
-        opacity: 0.5%;
+      opacity: 0.5;
 
     }
 
     100% {
 
-        opacity: 1;
+      opacity: 1;
 
     }
-    
+
 }

@@ -6,7 +6,7 @@
     padding: 20px 5px 20px 5px;
     margin-top: 5px;
     text-align: center;
-    width: 1501px;
+    width: 150px;
 
 }
 
@@ -48,7 +48,7 @@
     height: 25px;
     position: relative;
     right: 10px;
-
+  
 }
 
 
@@ -69,14 +69,24 @@
 
 
 @mixin btn-card {
-    
+
     color: #008766;
-    background: $color-primary;
-    border: 5px solid $color-primary;
+    background: $color-tertiary;
+    border: 5px solid $color-tertiary;
     border-radius: 5px;
     position: absolute;
     right: 1%;
     top: 5%;
+}
+
+
+@mixin card {
+
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 20px;
+    position: relative;
+    background: #fff;
 
 }
 
@@ -99,17 +109,16 @@
 
 }
 
-
 @mixin card-figcaption {
 
     margin: 0;
     padding: 10px;
-    
+
 }
 
 
 @mixin menu-header {
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,20 +127,20 @@
 
 
 @mixin main-menu {
-    
+
     background-color: #f6f6f6;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
     position: relative;
-    margin-top: -50%;
+    margin-top: -50px;
 
 }
 
 
 @mixin menu-title {
-    
-    font-family: 'Shrikhand', sans-serif;
+
+    font-family: Shrikhand, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +150,7 @@
 
 
 @mixin meals {
-    
+
     background-color: #fff;
     border-radius: 15px;
     margin: 10px;
@@ -150,31 +159,38 @@
     position: relative;
     cursor: pointer;
     white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
     transition: padding-right 450ms ease-in-out;
 
     &:hover {
 
-        padding-right: 75px;
+      padding-right: 75px;
 
     }
 
     &:hover .cross {
 
-        opacity: 1;
-        transform: rotate(360deg);
+      opacity: 1;
+      transform: translate(-50px);
+
+    }
+
+    &:hover .fa-check-circle {
+
+      transform: rotate(360deg) ;
 
     }
 
 }
-
+  
 
 @mixin cross {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-primary;
+    background-color: $color-tertiary;
     width: 50px;
     height: 63px;
     border-top-right-radius: 15px;
@@ -188,8 +204,8 @@
 
     & .fa-check-circle {
 
-        color: #fff;
-        transition: transform 500ms ease-in-out;
+      color: #fff;
+      transition: transform 500ms ease-in-out;
 
     }
 
@@ -197,10 +213,10 @@
 
 
 @mixin tablet {
-    
-    @media screen and (min-width:map-get($breakpoints, tablet)) {
-        
-        @content;
+
+    @media screen and (min-width:map-get($breakpoints, tablet)){
+
+      @content;
 
     }
 
@@ -208,10 +224,10 @@
 
 
 @mixin desktop {
-    
-    @media screen and (min-width:map-get($breakpoints, desktop)) {
-        
-        @content;
+
+    @media screen and (min-width:map-get($breakpoints, desktop)){
+
+      @content;
 
     }
 
@@ -219,22 +235,22 @@
 
 
 @mixin large {
-    
-    @media screen and (min-width:map-get($breakpoints, large)) {
-        
-        @content;
+
+    @media screen and (min-width:map-get($breakpoints, large)){
+
+      @content;
 
     }
 
 }
 
+  
+@mixin medium-screen {
 
-@mixin medium-screnn {
-    
-    @media screen and (min-width:map-get(breakpoints, medium)) {
-        
-        @content;
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+
+      @content;
 
     }
-    
+
 }
