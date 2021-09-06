@@ -621,6 +621,7 @@ ul li a {
 
 .operation__steps {
   list-style-type: none;
+  margin-left: -3em;
 }
 
 .operation__steps li {
