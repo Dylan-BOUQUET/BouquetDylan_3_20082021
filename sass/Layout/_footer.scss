@@ -52,3 +52,13 @@ ul {
     margin-right: 5px;
 
 }
+
+footer {
+
+    @include tablet {
+
+        width: 31em;
+
+    }
+
+}
