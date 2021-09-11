@@ -142,7 +142,7 @@ ul li a {
 .howto__title {
   padding-left: 10px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .howto__title {
     position: absolute;
     top: 350px;
@@ -186,7 +186,7 @@ ul li a {
     padding: 0 20px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .howto {
     padding: 0 20%;
   }
@@ -244,7 +244,7 @@ ul li a {
     flex-flow: row wrap;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .main__restaurant {
     padding: 0 20%;
   }
@@ -299,7 +299,7 @@ ul li a {
     left: 44%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .loader__food {
     top: 40%;
     left: 47%;
@@ -362,7 +362,7 @@ ul li a {
   margin-top: -50px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .full__menu {
     display: flex;
     justify-content: space-around;
@@ -372,7 +372,7 @@ ul li a {
 .starter {
   animation: fadein 3s ease-in-out;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .starter {
     width: 400px;
   }
@@ -381,7 +381,7 @@ ul li a {
 .dish {
   animation: fadein 6s ease-in-out;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .dish {
     width: 400px;
   }
@@ -390,7 +390,7 @@ ul li a {
 .dessert {
   animation: fadein 9s ease-in-out;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .dessert {
     width: 400px;
   }
@@ -477,7 +477,7 @@ ul li a {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .howto__button {
     margin: 70px 0;
   }
@@ -528,7 +528,7 @@ ul li a {
   align-items: center;
   padding: 10px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .menu__title {
     padding: 10px 90px;
   }
@@ -571,7 +571,7 @@ ul li a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .last__line p {
     padding-right: 20px;
   }
@@ -604,7 +604,7 @@ ul li a {
   padding: 20px;
   width: 50%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 2000px) {
   .btn__order button {
     width: 25%;
   }
