@@ -204,7 +204,7 @@ ul li a {
 }
 @media screen and (min-width: 768px) {
   .restaurant__title h3 {
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -627,6 +627,10 @@ ul li a {
 }
 .englobante .h3 {
   text-align: inherit;
+}
+.englobante footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurant {

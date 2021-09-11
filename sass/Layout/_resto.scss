@@ -17,7 +17,7 @@
 
     @include tablet {
 
-      text-align: center;
+      text-align: start;
 
     }
 
@@ -46,6 +46,7 @@
     @include card-img ;
 
 }
+
 
 
 .main__restaurant {
