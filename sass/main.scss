@@ -7,6 +7,17 @@
 @import "./Components/maps", "./Components/btn-about", "./Components/howto-btn", "./Components/btn-card", "./Components/heart-icon", "./Components/menus-header";
 
 
+.restaurant {
+
+    background: #f6f6f6;
+}
+
+
+img#logo {
+
+    width: 5em;
+}
+
 
 .operation {
 
@@ -25,7 +36,6 @@
 .operation__steps {
 
     list-style-type: none;
-    margin-left: -3em;
 
 }
 
