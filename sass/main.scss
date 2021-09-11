@@ -6,17 +6,94 @@
 
 @import "./Components/maps", "./Components/btn-about", "./Components/howto-btn", "./Components/btn-card", "./Components/heart-icon", "./Components/menus-header";
 
+    
+
+.englobante {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h3 {
+
+    text-align: inherit;
+
+    }
+
+    footer {
+        background-color: #353535;
+        padding: 25px;
+        color: white;
+        width: 31em;
+        text-align: inherit;
+    }
+
+    .card {
+        width: 28em;
+        margin-right: 1.5em;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .englobante {
+
+        display: flex;
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+        flex-wrap: wrap;
+
+    }
+
+    .h3 {
+
+        text-align: inherit;
+    
+    }
+    
+    footer {
+
+            background-color: #353535;
+
+            padding: 25px;
+
+            color: white;
+
+            width: 31em;
+           
+    }
+
+}
+
+
+
 
 .restaurant {
 
     background: #f6f6f6;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    
 }
+
 
 
 img#logo {
 
     width: 5em;
 }
+
 
 
 .operation {
@@ -26,11 +103,13 @@ img#logo {
 }
 
 
+
 .operation h2 {
 
     padding: 20px;
 
 }
+
 
 
 .operation__steps {
@@ -39,34 +118,51 @@ img#logo {
 
 }
 
+
+
 .operation__steps li {
 
     display: flex;
+
     flex-direction: row;
+
     justify-content: flex-start;
+
     align-items: center;
+
     flex-wrap: nowrap;
+
     padding: 25px;
+
     margin: 15px 20px 15px 30px;
+
     border-radius: 20px;
+
     box-shadow: 1px 2px 8px 2px #c4c4c4;
+
     background-color: #f5f5f5;
 
+
 }
+
 
 
 .operation__steps li p {
     
     font-weight: 500;
+
     margin-left: 20px;
 
 }
 
 
+
 .operation__steps li:hover {
 
     background: #f2eafb;
+
 }
+
 
 
 .operation__steps li:hover .fas {
@@ -76,21 +172,29 @@ img#logo {
 }
 
 
+
 .operation__steps--number {
 
     background-color: #9356dc;
+
     color: white;
+
     border-radius: 50%;
+
     padding: 5px 9px;
+
     margin-left: -40px;
 
 }
 
 
+
 .operation__steps--icon {
 
     color: grey;
+
     font-size: 1.2rem;
+
     margin-left: 20px;
 
 }
