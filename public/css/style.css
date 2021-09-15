@@ -637,7 +637,6 @@ ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 31em;
 }
 .englobante .btn__order button {
   width: 15em;
