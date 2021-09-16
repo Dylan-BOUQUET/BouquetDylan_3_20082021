@@ -311,7 +311,7 @@ ul li a {
   vertical-align: middle;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: calc(50% - 10px);
   animation: rotate 1s linear infinite;
 }
 
