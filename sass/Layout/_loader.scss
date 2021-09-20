@@ -22,8 +22,8 @@
 
     vertical-align: middle;
     position: absolute;
-    top: 40%;
-    left: 43%;
+    top: calc(100% - 400px);
+    left: calc(100% - 240px);
 
 @include tablet {
 

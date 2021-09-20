@@ -131,6 +131,7 @@ ul li a {
 }
 .about p {
   color: #4d4d4d;
+  margin: 2em;
 }
 
 .howto__title {
@@ -213,7 +214,7 @@ ul li a {
   .card {
     width: 100%;
     margin-right: 10em;
-    margin-left: -0.4em;
+    margin-left: 0em;
   }
 }
 
@@ -284,8 +285,8 @@ ul li a {
 .loader__food {
   vertical-align: middle;
   position: absolute;
-  top: 40%;
-  left: 43%;
+  top: calc(100% - 400px);
+  left: calc(100% - 240px);
 }
 @media screen and (min-width: 768px) {
   .loader__food {
@@ -542,7 +543,7 @@ ul li a {
   transition: padding-right 450ms ease-in-out;
 }
 .meals:hover {
-  padding-right: 75px;
+  padding-right: 2.8em;
 }
 .meals:hover .cross {
   opacity: 1;
@@ -564,6 +565,7 @@ ul li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 0.65rem;
 }
 @media screen and (min-width: 2000px) {
   .last__line p {
@@ -577,12 +579,15 @@ ul li a {
 
 .meals h4 {
   margin: 0;
+  font-size: 0.8rem;
 }
 
 .starter h3, .dish h3, .dessert h3 {
   padding-left: 10px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  font-weight: 100;
+  font-family: sans-serif;
 }
 
 .btn__order button {
@@ -612,6 +617,7 @@ ul li a {
 .btn__order {
   display: flex;
   justify-content: center;
+  background: #f6f6f6;
 }
 
 .wrapper {
@@ -636,7 +642,7 @@ ul li a {
 .englobante .full__menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 .englobante .btn__order button {
   width: 15em;
