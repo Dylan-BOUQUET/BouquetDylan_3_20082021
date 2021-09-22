@@ -669,6 +669,10 @@ img#logo1 {
   width: 5em;
 }
 
+img#logo {
+  width: 5em;
+}
+
 .operation {
   margin-bottom: 50px;
 }
