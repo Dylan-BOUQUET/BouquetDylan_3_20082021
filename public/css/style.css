@@ -610,6 +610,7 @@ ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .englobante .full__menu {
   display: flex;
@@ -695,6 +696,15 @@ img#logo {
   color: grey;
   font-size: 1.2rem;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

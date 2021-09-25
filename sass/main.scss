@@ -35,6 +35,8 @@
 
         align-items: center;
 
+        width: 100%;
+
     }
 
 
@@ -72,8 +74,6 @@
     }
 
 }
-
-
 
 .div {
     padding: 1em;
@@ -211,3 +211,12 @@ img#logo {
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
