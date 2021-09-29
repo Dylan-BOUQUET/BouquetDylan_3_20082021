@@ -61,6 +61,7 @@ body, html {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes fadein {
@@ -276,6 +277,7 @@ ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .loader__food span {
