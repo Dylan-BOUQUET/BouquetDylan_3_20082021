@@ -410,7 +410,7 @@ ul li a {
 }
 
 .btn__about button {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 5px;
@@ -422,7 +422,6 @@ ul li a {
 .btn__about button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
-  box-shadow: 4px 4px 6px #000;
 }
 
 .howto__button {
@@ -566,7 +565,7 @@ ul li a {
 }
 
 .btn__order button {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 5px;
@@ -586,7 +585,6 @@ ul li a {
 .btn__order button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
-  box-shadow: 4px 4px 6px #000;
 }
 
 .btn__order {
