@@ -61,7 +61,6 @@ body, html {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 @keyframes fadein {
@@ -91,18 +90,17 @@ footer {
   background-color: #353535;
   padding: 25px;
   color: white;
-  width: 100%;
 }
 
 h3 {
+  font-family: "Shrikhand", "sans-serif";
+  padding: 5px 0 20px 0;
   font-size: 1.2rem;
-  font-weight: 600;
-  font-family: "Shrikhand";
+  font-weight: 500;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
 }
 ul li {
   padding: 5px 0 5px 0;
@@ -124,20 +122,18 @@ ul li a {
   text-align: center;
   width: 100%;
   padding: 40px 0;
-  padding-right: 1em;
 }
 .about h2 {
   font-weight: bold;
 }
 .about p {
   color: #4d4d4d;
-  margin: 2em;
 }
 
 .howto__title {
   padding-left: 10px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .howto__title {
     position: absolute;
     top: 350px;
@@ -181,7 +177,7 @@ ul li a {
     padding: 0 20px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .howto {
     padding: 0 20%;
   }
@@ -194,12 +190,11 @@ ul li a {
 }
 
 .restaurant__title h3 {
-  padding: 30px 0px 0px 20px;
-  font-family: sans-serif;
+  padding: 30px 0px 0px 10px;
 }
 @media screen and (min-width: 768px) {
   .restaurant__title h3 {
-    text-align: start;
+    text-align: center;
   }
 }
 
@@ -212,9 +207,7 @@ ul li a {
 }
 @media screen and (min-width: 768px) {
   .card {
-    width: 100%;
-    margin-right: 10em;
-    margin-left: 0em;
+    width: 40%;
   }
 }
 
@@ -239,7 +232,7 @@ ul li a {
     flex-flow: row wrap;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .main__restaurant {
     padding: 0 20%;
   }
@@ -269,23 +262,50 @@ ul li a {
   background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
   width: 100%;
   height: 100%;
+  line-height: 100%;
   font-family: Shrikhand, sans-serif;
   font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
   position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
+}
+
+.loader__food {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+@media screen and (min-width: 768px) {
+  .loader__food {
+    top: 40%;
+    left: 35%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .loader__food {
+    top: 40%;
+    left: 45%;
+  }
 }
 
 .loader__food span {
   display: inline-block;
+  width: 5px;
+  height: 20px;
+  padding-right: 1em;
 }
 
 .loader__fork {
-  padding: 1.5em;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   animation: rotate 1s linear infinite;
 }
 
@@ -330,7 +350,7 @@ ul li a {
   margin-top: -50px;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .full__menu {
     display: flex;
     justify-content: space-around;
@@ -340,7 +360,7 @@ ul li a {
 .starter {
   animation: fadein 3s ease-in-out;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .starter {
     width: 400px;
   }
@@ -349,7 +369,7 @@ ul li a {
 .dish {
   animation: fadein 6s ease-in-out;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .dish {
     width: 400px;
   }
@@ -358,7 +378,7 @@ ul li a {
 .dessert {
   animation: fadein 9s ease-in-out;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .dessert {
     width: 400px;
   }
@@ -410,7 +430,7 @@ ul li a {
 }
 
 .btn__about button {
-  background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 5px;
@@ -422,6 +442,7 @@ ul li a {
 .btn__about button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
 }
 
 .howto__button {
@@ -444,7 +465,7 @@ ul li a {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .howto__button {
     margin: 70px 0;
   }
@@ -458,7 +479,6 @@ ul li a {
   position: absolute;
   right: 1%;
   top: 5%;
-  margin-right: 1em;
 }
 
 .fill {
@@ -467,7 +487,12 @@ ul li a {
 }
 .fill:hover {
   animation: fill 0.3s ease-in-out;
-  color: #9356dc;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
@@ -495,7 +520,7 @@ ul li a {
   align-items: center;
   padding: 10px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .menu__title {
     padding: 10px 90px;
   }
@@ -515,7 +540,7 @@ ul li a {
   transition: padding-right 450ms ease-in-out;
 }
 .meals:hover {
-  padding-right: 2.8em;
+  padding-right: 75px;
 }
 .meals:hover .cross {
   opacity: 1;
@@ -537,9 +562,8 @@ ul li a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 0.65rem;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .last__line p {
     padding-right: 20px;
   }
@@ -551,21 +575,16 @@ ul li a {
 
 .meals h4 {
   margin: 0;
-  font-size: 0.8rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .starter h3, .dish h3, .dessert h3 {
   padding-left: 10px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-weight: 100;
-  font-family: sans-serif;
 }
 
 .btn__order button {
-  background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 5px;
@@ -577,7 +596,7 @@ ul li a {
   padding: 20px;
   width: 50%;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1280px) {
   .btn__order button {
     width: 25%;
   }
@@ -585,141 +604,12 @@ ul li a {
 .btn__order button:hover {
   background-color: #ae80e5;
   background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
 }
 
 .btn__order {
   display: flex;
   justify-content: center;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.englobante {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.englobante .header__img {
-  width: 100%;
-}
-.englobante .menu__main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.englobante .full__menu {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.englobante .main__restaunt {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.englobante .btn__order button {
-  width: 15em;
-}
-.englobante .h3 {
-  text-align: inherit;
-}
-.englobante footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.div {
-  padding: 1em;
-}
-
-.restaurant {
-  background: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-}
-
-img#logo1 {
-  width: 5em;
-}
-
-img#logo {
-  width: 5em;
-}
-
-.operation {
-  margin-bottom: 50px;
-}
-
-.operation h2 {
-  padding: 20px;
-}
-
-.operation__steps {
-  list-style-type: none;
-}
-
-.operation__steps li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 0.6rem;
-  margin: 5vw 5vw 5vw 10vw;
-  border-radius: 20px;
-  box-shadow: 1px 2px 8px 2px #c4c4c4;
-  background-color: #f5f5f5;
-}
-
-.operation__steps li p {
-  font-weight: 500;
-  margin-left: 20px;
-}
-
-.operation__steps li:hover {
-  background: #f2eafb;
-}
-
-.operation__steps li:hover .fas {
-  color: #9356dc;
-}
-
-.operation__steps--number {
-  background-color: #9356dc;
-  color: white;
-  border-radius: 50%;
-  padding: 5px 9px;
-  margin-left: -40px;
-}
-
-.operation__steps--icon {
-  color: grey;
-  font-size: 1.2rem;
-  margin-left: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .wrapper, englobante {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
