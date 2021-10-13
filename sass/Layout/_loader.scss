@@ -9,8 +9,8 @@
   text-align: center;
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
   pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
 }
@@ -18,14 +18,14 @@
   vertical-align: middle;
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 38%;
   @include tablet {
     top:40%;
     left: 35%;
   }
   @include desktop {
     top: 40%;
-    left: 45%;
+    left: 47%;
   }
 }
 .loader__food span {

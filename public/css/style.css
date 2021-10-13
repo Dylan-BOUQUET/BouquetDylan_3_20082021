@@ -94,8 +94,9 @@ footer {
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Shrikhand";
 }
 
 ul {
@@ -270,8 +271,8 @@ ul li a {
   text-align: center;
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
   pointer-events: none;
   animation: loader 1s ease-in-out 3s forwards;
 }
@@ -280,7 +281,7 @@ ul li a {
   vertical-align: middle;
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 38%;
 }
 @media screen and (min-width: 768px) {
   .loader__food {
@@ -291,7 +292,7 @@ ul li a {
 @media screen and (min-width: 1280px) {
   .loader__food {
     top: 40%;
-    left: 45%;
+    left: 47%;
   }
 }
 
@@ -613,6 +614,14 @@ ul li a {
   justify-content: center;
 }
 
+img#logo1 {
+  width: 5em;
+}
+
+img#logo {
+  width: 5em;
+}
+
 .operation__steps li {
   display: flex;
   flex-direction: row;
@@ -630,11 +639,6 @@ ul li a {
   background: #f2eafb;
 }
 
-.fa-mobile-alt:before:hover {
-  content: "\f3cd";
-  background: #f2eafb;
-}
-
 .operation__steps--number {
   background-color: #9356dc;
   color: white;
@@ -648,6 +652,10 @@ ul li a {
   font-size: 1.2rem;
   margin-left: 20px;
   padding: 1em;
+}
+
+.operation__steps--icon:hover {
+  background-color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */
