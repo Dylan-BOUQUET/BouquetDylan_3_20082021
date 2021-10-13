@@ -17,11 +17,14 @@ img#logo {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 5px;
-    margin: 10px 10px 0px 25px;
+    margin: 10px 10px 1.5em 25px;
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
     background-color: #f5f5f5;
+}
+
+.operation__steps, ul {
+    padding: 0;
 }
 
 .operation__steps li:hover {
@@ -43,6 +46,7 @@ img#logo {
     padding: 1em;
 }
 
-.operation__steps--icon:hover {
-    background-color: #9356dc;
+
+.operation__steps li:hover i {
+    color: #9356dc;
 }
